@@ -1,0 +1,44 @@
+{
+    "providers": [
+        "Illuminate\\Bus\\BusServiceProvider",
+        "Illuminate\\Cache\\CacheServiceProvider",
+        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "Illuminate\\Filesystem\\FilesystemServiceProvider",
+        "Illuminate\\Queue\\QueueServiceProvider",
+        "Illuminate\\Database\\DatabaseServiceProvider"
+    ],
+    "eager": [
+        "Illuminate\\Filesystem\\FilesystemServiceProvider",
+        "Illuminate\\Database\\DatabaseServiceProvider"
+    ],
+    "deferred": {
+        "Illuminate\\Bus\\Dispatcher": "Illuminate\\Bus\\BusServiceProvider",
+        "Illuminate\\Contracts\\Bus\\Dispatcher": "Illuminate\\Bus\\BusServiceProvider",
+        "Illuminate\\Contracts\\Bus\\QueueingDispatcher": "Illuminate\\Bus\\BusServiceProvider",
+        "cache": "Illuminate\\Cache\\CacheServiceProvider",
+        "cache.store": "Illuminate\\Cache\\CacheServiceProvider",
+        "memcached.connector": "Illuminate\\Cache\\CacheServiceProvider",
+        "command.cache.clear": "Illuminate\\Cache\\CacheServiceProvider",
+        "command.cache.table": "Illuminate\\Cache\\CacheServiceProvider",
+        "composer": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "command.queue.failed": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "command.queue.retry": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "command.queue.forget": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "command.queue.flush": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "queue": "Illuminate\\Queue\\QueueServiceProvider",
+        "queue.worker": "Illuminate\\Queue\\QueueServiceProvider",
+        "queue.listener": "Illuminate\\Queue\\QueueServiceProvider",
+        "queue.failer": "Illuminate\\Queue\\QueueServiceProvider",
+        "command.queue.work": "Illuminate\\Queue\\QueueServiceProvider",
+        "command.queue.listen": "Illuminate\\Queue\\QueueServiceProvider",
+        "command.queue.restart": "Illuminate\\Queue\\QueueServiceProvider",
+        "command.queue.subscribe": "Illuminate\\Queue\\QueueServiceProvider",
+        "queue.connection": "Illuminate\\Queue\\QueueServiceProvider"
+    },
+    "when": {
+        "Illuminate\\Bus\\BusServiceProvider": [],
+        "Illuminate\\Cache\\CacheServiceProvider": [],
+        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [],
+        "Illuminate\\Queue\\QueueServiceProvider": []
+    }
+}
