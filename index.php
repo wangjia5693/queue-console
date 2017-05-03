@@ -9,9 +9,9 @@ require __DIR__.'/vendor/autoload.php';
 use Illuminate\Queue\Capsule\Manager as Queue;
 $queue = new Queue();
 $queue->addConnection([
-    'driver' => 'beanstalkd',
-    'host' => '192.168.101.147',
-    'queue' => 'default',
+    'driver' => '',
+    'host' => '',
+    'queue' => '',
 ],'beanstalkd');
 $queue->setAsGlobal();
 
@@ -19,9 +19,9 @@ use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
 use Illuminate\Database\Capsule\Manager as DB;
 
-$__CFG['ndb']['username'] = 'b2b';
-$__CFG['ndb']['host'] = '192.168.101.10';//'mysql_ms_dev';
-$__CFG['ndb']['password'] = 'b2b1234';
+$__CFG['ndb']['username'] = '';
+$__CFG['ndb']['host'] = '';//'mysql_ms_dev';
+$__CFG['ndb']['password'] = '';
 $__CFG['ndb']['charset'] = 'utf8';
 $__CFG['ndb']['collation'] = 'utf8_unicode_ci';
 $__CFG['ndb']['driver'] = 'mysql';
