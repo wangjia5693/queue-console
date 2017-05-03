@@ -10,9 +10,9 @@ return [
 			'driver' => 'sync',
 		],
 		'beanstalkd' => [
-			'driver' => 'beanstalkd',
-			'host'   => '192.168.101.147',
-			'queue'  => 'beanstalkd',
+			'driver' => '',
+			'host'   => '',
+			'queue'  => '',
 			'ttr'    => 60,
 		],
 		'redis' => [
