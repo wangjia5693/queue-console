@@ -7,9 +7,9 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'b2b',
-			'username'  => 'root',
-			'password'  => 'wangjia5693',
+			'database'  => '',
+			'username'  => '',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
